@@ -1,0 +1,100 @@
+.experience {
+  &__wrapper {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
+
+  &-title {
+    position: relative;
+    padding-left: 35px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: $main-color;
+      border-radius: 100%;
+      left: -7px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      position: relative;
+      &:first-child {
+        padding-bottom: 45px;
+      }
+      &:after {
+        content: "";
+        width: 1px;
+        height: calc(100% + 16px);
+        position: absolute;
+        top: -16px;
+        left: 0;
+        background-color: #000;
+      }
+    }
+  }
+  &-item {
+    position: relative;
+    &:before {
+      content: "";
+      height: 1px;
+      width: 45px;
+      position: absolute;
+      top: 61px;
+      background-color: #000;
+    }
+    &-head {
+      position: relative;
+      padding: 45px 0 0 100px;
+    }
+  }
+  &__hover {
+    display: grid;
+    grid-template-columns: 50px 270px;
+    padding-left: 37px;
+    padding-top: 45px;
+
+    .circle_and_icon {
+      grid-row: 1/3;
+    }
+    &-descr {
+      grid-column: 1/3;
+      padding-top: 10px;
+    }
+    h4 {
+      margin: 0;
+    }
+  }
+
+  &__descr {
+    padding-top: 120px;
+    text-align: center;
+    .title_and_circle {
+      &:before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .divider {
+      display: inline-block;
+    }
+  }
+  #udemy {
+    li {
+      list-style-type: "\2714";
+    }
+    li:after {
+      width: 0;
+    }
+    li:first-child {
+      padding-bottom: 0;
+    }
+  }
+}

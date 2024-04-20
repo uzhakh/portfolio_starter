@@ -1,0 +1,20 @@
+.location {
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  //   align-items: center;
+  position: relative;
+  width: 170px;
+  top: 1px;
+  img {
+    position: absolute;
+    top: 2px;
+    height: 15px;
+    animation: bounceAndShake 2s ease infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  span {
+    padding-left: 15px;
+  }
+}

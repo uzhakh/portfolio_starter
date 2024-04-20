@@ -1,0 +1,20 @@
+@keyframes bounceAndShake {
+  0% {
+    transform: translateY(0); /* Начальная позиция */
+  }
+  30% {
+    transform: translateY(-3px); /* Подпрыгивание наверх на 5px */
+  }
+  50% {
+    transform: translateY(0); /* Возвращаемся к исходной позиции */
+  }
+  65% {
+    transform: translateY(-3px); /* Легкое подпрыгивание наверх на 3px */
+  }
+  80% {
+    transform: translateY(0); /* Возвращаемся к исходной позиции */
+  }
+  100% {
+    transform: translateY(-1px); /* Небольшое подпрыгивание наверх на 1px */
+  }
+}
